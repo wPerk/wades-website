@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wade's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <i class="fas fa-home home-button" onclick="goHome()"></i>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="#">Page 1</a></li>
+            <li><a href="#" id="#">Page 2</a></li>
+            <li><a href="#" id="#">Page 3</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li>
+                    <a href="home.html">Home/Introduction</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about-me.html">About Me</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="education.html">Education</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Experience</a>
+                    <ul class="sub-list">
+                        <li><a href="experience1.html">Experience 1</a></li>
+                        <li><a href="experience2.html">Experience 2</a></li>
+                        <li><a href="experience3.html">Experience 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                        <li><a href="#">Sub Item 3</a></li>
+                        <li><a href="#">Sub Item 4</a></li>
+                        <li><a href="#">Sub Item 5</a></li>
+                        <li><a href="#">Sub Item 6</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="honors-and-awards.html">Honors and Awards</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities-and-interests.html">Activities and Interests</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="resume.html">Resume/CV</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+    <main class="main-content">
+        <div>
+            <h2 style="margin-left: 20px;">Newcomb & Boyd</h2>
+        </div>
+        <div class="content-container">
+            <div class="left-column">
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\NB Logo.jpg" alt="" style="margin-left:20px;width:100%;height:auto;" onload="logImageSize(this)"><br>
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\NB.jpg" alt="" style="margin-left:20px;margin-bottom:60px;width:100%;height:auto;" onload="logImageSize(this)">
+            </div>
+            <div class="right-column">
+                <details style="margin-left: 20px;">
+                    <summary>My Role</summary>
+                    <p style="margin-left: 40px;">Electrical Engineering Co-op</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>My Responsibilities</summary>
+                    <p style="margin-left: 40px;">Conducted detailed lighting calculations for various projects to ensure compliance with lighting standards and energy efficiency.</p>
+                    <p style="margin-left: 40px;">Designed and executed layouts for electrical equipment, including circuits and distribution systems, to support project needs.</p>
+                    <p style="margin-left: 40px;">Created SKM models for analyzing and simulating electrical systems, ensuring optimal performance and safety.</p>
+                    <p style="margin-left: 40px;">Collaborated with teams to review and coordinate architectural drawings, ensuring electrical systems were integrated seamlessly.</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>Specific Projects</summary>
+                    <p style="margin-left: 40px;">MedWest: Led lighting design and calculation efforts for a healthcare facility, improving illumination levels and reducing energy consumption.</p>
+                    <p style="margin-left: 40px;">Joan Glancey: Designed electrical layouts and conducted load calculations for a commercial building, optimizing space and efficiency.</p>
+                    <p style="margin-left: 40px;">ADOC (Alabama Department of Corrections): Contributed to the development of electrical plans and equipment specifications for a prison, ensuring reliable power distribution.</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>Dates Employed</summary>
+                    <p style="margin-left: 40px;">Newcomb & Boyd, Atlanta GA <span style="float: right; margin-right: 20px;">Jan 2022 – Aug 2023</span></p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>About Newcomb & Boyd</summary>
+                    <p style="margin-left: 40px;">With engineers in Atlanta, Charleston, and Raleigh, Newcomb & Boyd’s innovative engineering solutions have successfully met the needs of institutional, educational, government, military, and commercial clients for more than 95 years.</p>
+                </details>
+                <p style="text-align: center; margin-top: 10px; margin-bottom: 10px;"> ___________________________________________________________________ </p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Address Icon.png" alt="" style="width:20px;height:20px;">&nbsp; Location: 303 Peachtree Center Ave NE # 525, Atlanta, GA 30303</p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Website Icon.png" alt="" style="width:20px;height:20px;">&nbsp; Website: <a href="http://www.newcomb-boyd.com/">www.newcomb-boyd.com</a></p>
+                <p style="margin-left: 20px; margin-bottom: 72px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Phone Icon.png" alt="" style="width:20px;height:20px;">&nbsp; Phone: (404) 730-8400</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My First Website</p>                                                                 <!-- Displays copyright information -->
+    </footer>
+    <script src="script.js"></script>                                                                    <!-- Links the JavaScript file for interactivity -->
+    <div id="collapse-all-btn"></div>   <!--This line of code is here because for some reason, the progress bar has stopped working unless id="collapse-all-btn" shows up somewhere in the code-->
+</body>
+</html>

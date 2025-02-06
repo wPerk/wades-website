@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wade's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <i class="fas fa-home home-button" onclick="goHome()"></i>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="#">Page 1</a></li>
+            <li><a href="#" id="#">Page 2</a></li>
+            <li><a href="#" id="#">Page 3</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li>
+                    <a href="home.html">Home/Introduction</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about-me.html">About Me</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="education.html">Education</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Experience</a>
+                    <ul class="sub-list">
+                        <li><a href="experience1.html">Experience 1</a></li>
+                        <li><a href="experience2.html">Experience 2</a></li>
+                        <li><a href="experience3.html">Experience 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                        <li><a href="#">Sub Item 3</a></li>
+                        <li><a href="#">Sub Item 4</a></li>
+                        <li><a href="#">Sub Item 5</a></li>
+                        <li><a href="#">Sub Item 6</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="honors-and-awards.html">Honors and Awards</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities-and-interests.html">Activities and Interests</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="resume.html">Resume/CV</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+    <main class="main-content">
+        <div>
+            <h2 style="margin-left: 20px;">Best Buy</h2>
+        </div>
+        <div class="content-container">
+            <div class="left-column">
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Best Buy Logo 2.jpg" alt="" style="margin-left:20px;width:100%;height:auto;" onload="logImageSize(this)"><br>
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Best Buy.png" alt="" style="margin-left:20px;margin-bottom:60px;width:100%;height:auto;" onload="logImageSize(this)">
+            </div>
+            <div class="right-column">
+                <details style="margin-left: 20px;">
+                    <summary>My Roles</summary>
+                    <p style="margin-left: 40px;">Inventory and Product Flow</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>My Responsibilities</summary>
+                    <p style="margin-left: 40px;">
+                        Managed product flow processes, including receiving, stocking,andinventory
+                        management, ensuring accurate and timely product availability.
+                    </p>
+                    <p style="margin-left: 40px;">
+                        Implemented inventory control procedures to minimize discrepancies
+                        and ensure accurate stock levels.
+                    </p>
+                    <p style="margin-left: 40px;">
+                        Collaborated with team members to maintain organized and efficient
+                        product displays, enhancing customer shopping experience.
+                    </p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>Dates Employed</summary>
+                    <p style="margin-left: 40px;">
+                        Best Buy, Snellville GA <span style="float: right; margin-right: 20px;">Jul 2020 – Dec 2021</span><br><br>
+                        Best Buy, Norman OK	<span style="float: right; margin-right: 20px;">Aug 2018 – Mar 2019</span>
+                    </p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>About Best Buy</summary>
+                    <p style="margin-left: 40px;">
+                        We do that by leveraging our unique combination of tech expertise and human touch to meet our customers’ everyday needs,
+                        whether they come to us online, visit our stores or invite us into their homes. With over 1,000 stores and more than
+                        90,000 employees in the United States and Canada, we solve key human needs in the areas of productivity, security, health,
+                        entertainment, connectivity, and more.
+                    </p>
+                </details>
+                <p style="text-align: center; margin-top: 10px; margin-bottom: 10px;"> ___________________________________________________________________ </p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Address Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Location: 1679 Scenic Hwy N Ste 100, Snellville, GA 30078</p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Website Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Website: <a href="https://stores.bestbuy.com/ga/snellville/1679-scenic-hwy-n-776.html/?ref=NS&loc=ns100">stores.bestbuy.com</a></p>
+                <p style="margin-left: 20px; margin-bottom: 72px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Phone Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Phone: (770) 810-2087</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My First Website</p>                                                                 <!-- Displays copyright information -->
+    </footer>
+    <script src="script.js"></script>                                                                    <!-- Links the JavaScript file for interactivity -->
+    <div id="collapse-all-btn"></div>   <!--This line of code is here because for some reason, the progress bar has stopped working unless id="collapse-all-btn" shows up somewhere in the code-->
+</body>
+</html>

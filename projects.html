@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wade's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <i class="fas fa-home home-button" onclick="goHome()"></i>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="#">Page 1</a></li>
+            <li><a href="#" id="#">Page 2</a></li>
+            <li><a href="#" id="#">Page 3</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li>
+                    <a href="home.html">Home/Introduction</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about-me.html">About Me</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="education.html">Education</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Experience</a>
+                    <ul class="sub-list">
+                        <li><a href="experience1.html">Experience 1</a></li>
+                        <li><a href="experience2.html">Experience 2</a></li>
+                        <li><a href="experience3.html">Experience 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="skills.html">Skills</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                        <li><a href="#">Sub Item 3</a></li>
+                        <li><a href="#">Sub Item 4</a></li>
+                        <li><a href="#">Sub Item 5</a></li>
+                        <li><a href="#">Sub Item 6</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="honors-and-awards.html">Honors and Awards</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities-and-interests.html">Activities and Interests</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="resume.html">Resume/CV</a>
+                    <ul class="sub-list">
+                        <li><a href="#">Sub Item 1</a></li>
+                        <li><a href="#">Sub Item 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+    <main class="main-content">
+        <div>
+            <h2 style="margin-left: 20px;">
+                Projects
+                <button id="collapse-all-btn">Collapse All</button>
+            </h2>
+            <section class="project-category">
+                <!--<h3>Noteworthy Projects</h3>-->
+                <button class="toggle-btn">
+                    Noteworthy Projects ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <div class="collapsible">
+                    <ul>
+                        <li>
+                            <h4>P1 - Arduino Tank</h4>
+                            <p>Function/Description: &nbsp; Built controller and tank that communicate to perform specific movements</p>
+                            <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                            <ul>
+                                <li>Documents: <a href="C:\Users\Wade\Documents\01_ARDUINO\PROJECTS\P1_Tank\P1_Controller7\P1_Controller7.ino">P1_Controller7</a>, <a href="C:\Users\Wade\Documents\01_ARDUINO\PROJECTS\P1_Tank\P1_Tank9_1\P1_Tank9_1.ino">P1_Tank9_1</a>, <a href="C:\Users\Wade\Documents\01_ARDUINO\PROJECTS\P1_Tank\P1_Tank_Diagrams.pdf">P1_Tank_Diagrams</a>
+                                <li>Pictures: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20191205_221252.jpg">Controller and Tank</a></li>
+                                <li>Videos: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20200514_121349.mp4">Controller and Tank</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>P2 - Audio Amplifier</h4>
+                            <p>Function/Description: &nbsp; Built audio circuit that performs as a speaker</p>
+                            <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                            <ul>
+                                <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                                <li>Pictures: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20210916_173154.jpg">Audio Amplifier</a></li>
+                                <li>Videos: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20210411_181317.mp4">Audio Amplifier</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>P3 - Coil Gun</h4>
+                            <p>Function/Description: &nbsp; Built electromagnetic circuit that launches small pieces of metal</p>
+                            <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                            <ul>
+                                <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                                <li>Pictures: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20210916_173652.jpg">Coil Gun</a></li>
+                                <li>Videos: <a href="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\1_Career Fair\20200531_213517.mp4">Coil Gun</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="project-category">
+                <!--<h3>Analog Circuits</h3>-->
+                <button class="toggle-btn">
+                    Analog Circuits ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>Arduino (C++)</h3>-->
+                <button class="toggle-btn">
+                    Arduino (C++) ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>Android Studio</h3>-->
+                <button class="toggle-btn">
+                    Android Studio ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>C Programming (CodeBlocks)</h3>-->
+                <button class="toggle-btn">
+                    C Programming (CodeBlocks) ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>P1 - Chem Atoms</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to enter the number of atoms for each element in an amino acid.
+                            <p style="margin-left: 160px;">&nbsp;Then, the average weight of the total number of atoms in the molecule is calculated and displayed for the user.</p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P1_Perkins - CHEM ATOMS\main.c">Code</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P2 - Quad Roots</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to enter any value for each term in a quadratic equation.
+                            <p style="margin-left: 160px;">&nbsp;The roots are determined to be real, double, orcomplex; then are calculated and presented to the user.</p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P2_Perkins - QUAD ROOTS\main.c">Code</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P3 - Iterations of Pi</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to choose and enter a desired range of iterations.
+                            <p style="margin-left: 160px;">
+                                &nbsp;The iterations are used to calculate approximate values of pi for all iterations within the given
+                                range, and displays each value in a tabularized format.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P3_Perkins - ITERATIONS of PI\main.c">Code</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P4 - Definite Integrals</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to enter the degree, coefficients, and constant of a cubic polynomial
+                            along with the upper and lower limits of integration.
+                            <p style="margin-left: 160px;">
+                                &nbsp;Then, the value of the integrated polynomial is calculated and displayed, along with the polynomial
+                                formatted as an integral, to the user.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P4_Perkins - DEFINITE INTEGRALS\main.c">Code</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P5 - Recursive and Explicit Sequences</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to enter a number of elements for the sequence.
+                            <p style="margin-left: 160px;">
+                                &nbsp;Then the values for each element of the sequenceare calculated and displayed according to both the
+                                recursive and explicit versions of the sequence.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>
+                                Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P5_Perkins - RECURSIVE and EXPLICIT SEQUENCES\main.c">Code 1</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P5_Perkins - RECURSIVE and EXPLICIT SEQUENCES\complex.c">Code 2</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P5_Perkins - RECURSIVE and EXPLICIT SEQUENCES\complex.h">Code 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P6 - Matrix Math and Qualities</h4>
+                        <div>
+                            Function/Description: &nbsp; This program allows the user to enter a relation R on the set A = {a, b, c, d, e, f, g} which is stored in a
+                            2-dimensional array that represents M(R). It also asks the user <span style="margin-left: 160px;">&nbsp;for the number of times to take the boolean product of the provided relations.</span>
+                            <p style="margin-left: 160px;">
+                                &nbsp;Then, the program displays the matrix M(R) followed by R as a set of ordered pairs. The program also determines
+                                whether the matrix has qualities of symmetry, &nbsp;reflexivity, or transitivity. After receiving the path length, the
+                                boolean product is calculated and displayed as M(R^n) with "n" as the path length entered.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>
+                                Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P6_Perkins - MATRIX MATH and QUALITES\main.c">Code 1</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P6_Perkins - MATRIX MATH and QUALITES\relations.c">Code 2</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P6_Perkins - MATRIX MATH and QUALITES\relations.h">Code 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P7 - Calculator with Menu</h4>
+                        <div>
+                            Function/Description: &nbsp; This program initially asks the user to enter the coefficients and constant of a polynomial to a degree greater than zero.
+                            Then, the user will be allowed to choose <span style="margin-left: 160px;">&nbsp;what will be done with the polynomial by selecting one of the numbered options displayed by the program's menu.</span>
+                            The program will continue to run until the user <span style="margin-left: 160px;">&nbsp;selects option 9 which exits the program.</span>
+                            <p style="margin-left: 160px;">
+                                &nbsp;If the user selects option 1, the program will calculate and display the value of the function. If option 2 or 3 is
+                                selected, the program will calculate the derivative or &nbsp;indefinite integral, respectively, and display the original along with the new polynomial
+                                function. Finally, option 4 allows the user to enter a new polynomial.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>
+                                Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P7_Perkins - CALCULATOR w MENU\main.c">Code 1</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P7_Perkins - CALCULATOR w MENU\menu.c">Code 2</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P7_Perkins - CALCULATOR w MENU\calculus.c">Code 3</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P7_Perkins - CALCULATOR w MENU\menu.h">Code 4</a>,
+                                <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P7_Perkins - CALCULATOR w MENU\calculus.h">Code 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>P8 - Complex Numbers</h4>
+                        <div>
+                            Function/Description: &nbsp; This program utilizes no user input. It opens and reads a binary file, then calculates the magnitude and argument for each of the
+                            complex numbers that are <span style="margin-left: 160px;">&nbsp;processed from the file.</span>
+                            <p style="margin-left: 160px;">
+                                &nbsp;Finally, the processed information is written into a text file as a neatly formatted table. The complex numbers are displayed in the
+                                form a + bi, followed by its &nbsp;magnitude, then its argument - each value in its respective column.
+                            </p>
+                        </div>
+                        <p>Time to Complete:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="C:\Users\Wade\Documents\05_CodeBlocks\_Perkins\CSCI171_P8_Perkins - COMPLEX NUMs\main.c">Code 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>C++ Programming</h3>-->
+                <button class="toggle-btn">
+                    C++ Programming ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>Python Programming</h3>-->
+                <button class="toggle-btn">
+                    Python Programming ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project-category">
+                <!--<h3>R Programming</h3>-->
+                <button class="toggle-btn">
+                    R Programming ------------------------------------------------------------------------------------------------------------------------
+                </button>
+                <ul class="collapsible">
+                    <li>
+                        <h4>Project Name 1</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Project Name 2</h4>
+                        <p>Function/Description</p>
+                        <p>Time to Complete: X weeks/months</p>
+                        <ul>
+                            <li>Documents: <a href="#">Code</a>, <a href="#">Diagrams</a>, <a href="#">Specifications</a>, <a href="#">Parts List</a></li>
+                            <li>Pictures: <a href="#">Link to Pictures</a></li>
+                            <li>Videos: <a href="#">Link to Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My First Website</p>                                                                 <!-- Displays copyright information -->
+    </footer>
+    <script src="script.js"></script>                                                                    <!-- Links the JavaScript file for interactivity -->
+    <div id="collapse-all-btn"></div>   <!--This line of code is here because for some reason, the progress bar has stopped working unless id="collapse-all-btn" shows up somewhere in the code-->
+</body>
+</html>
