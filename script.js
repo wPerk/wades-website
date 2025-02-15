@@ -89,23 +89,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    collapseAllBtn.addEventListener('click', () => {
-        const isCollapsing = collapseAllBtn.textContent === 'Collapse All';
-        collapseAllBtn.textContent = isCollapsing ? 'Expand All' : 'Collapse All';
+    if (collapseAllBtn) {
+        collapseAllBtn.addEventListener('click', () => {
+            const isCollapsing = collapseAllBtn.textContent === 'Collapse All';
+            collapseAllBtn.textContent = isCollapsing ? 'Expand All' : 'Collapse All';
 
-        collapsibles.forEach((collapsible) => {
-            if (counter % 2 == 0) {                 //even
-                collapsible.style.maxHeight = "0px";
-            }
-            else if (counter % 2 != 0) {            //odd
-                collapsible.style.maxHeight = collapsible.scrollHeight + "px";
-            }
-            else if (counter == 0) {                //1st iteration
-                collapsible.style.maxHeight = "0px";
-            }
+            collapsibles.forEach((collapsible) => {
+                if (counter % 2 == 0) {                 //even
+                    collapsible.style.maxHeight = "0px";
+                }
+                else if (counter % 2 != 0) {            //odd
+                    collapsible.style.maxHeight = collapsible.scrollHeight + "px";
+                }
+                else if (counter == 0) {                //1st iteration
+                    collapsible.style.maxHeight = "0px";
+                }
+            });
+            counter += 1;
         });
-        counter += 1;
-    });
+    }
 
     window.onscroll = function () {
         console.log('Scroll event triggered'); // Check if this logs
