@@ -1,0 +1,84 @@
+
+//Soldered Controller//
+
+//DESCRIPTION//
+//This program should function as a controller with two joysticks, left joystick controlling
+//  the left motor (motor A) and the right joystick controlling the right motor (motor B).
+//The controller transmits joystick values to the tank via radio frequency.
+//
+//Talks to: P1_Tank9_1
+//
+//This code is closest to completion: 8/1/2020
+//
+//Upload using "ATmega328P (Old Bootloader)" processor
+//Also, verify code before uploading it.
+
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+
+RF24 radio(4, 6);                       //CE (green), CSN (blue)
+const byte address[6] = "00001";
+//SCK  is pin 13 (White)
+//MOSI is pin 11 (Yellow)
+//MISO is pin 12 (White)
+
+//Left Joystick (Joystick A)
+const int VRy_L = A0;  //Green
+const int VRx_L = A1;  //Blue
+const int sw_L = 10;   //Yellow
+//Right Joystick (Joystick B)
+const int VRy_R = A6;  //Green
+const int VRx_R = A7;  //Blue
+const int sw_R = 3;    //Yellow
+
+typedef struct{
+  int xVal_L;
+  int yVal_L;
+  int swVal_L;
+  int xVal_R;
+  int yVal_R;
+  int swVal_R;
+} jVals;
+
+jVals j;
+
+int d = 250;              //Delay (if needed)
+    
+void setup() {
+  radio.begin();
+  radio.openWritingPipe(address);
+  radio.setPALevel(RF24_PA_MAX);
+  radio.stopListening();
+
+  pinMode(sw_L, INPUT);       //Initiate switch on left joystick as an input
+  digitalWrite(sw_L, HIGH);   //Turn on switch on left joystick
+  pinMode(sw_R, INPUT);       //Initiate switch on right joystick as an input
+  digitalWrite(sw_R, HIGH);   //Turn on switch on right joystick
+  
+  Serial.begin(9600);         //Initiate serial monitor at 9600 baud
+}
+    
+void loop() {
+  j.xVal_L = analogRead(VRx_L);   //Define variable that depends on x-axis value from left joystick
+  j.yVal_L = analogRead(VRy_L);   //Define variable that depends on y-axis value from left joystick
+  j.swVal_L = digitalRead(sw_L);  //Define variable that depends on switch position on left joystick
+  j.xVal_R = analogRead(VRx_R);   //Define variable that depends on x-axis value from right joystick
+  j.yVal_R = analogRead(VRy_R);   //Define variable that depends on y-axis value from right joystick
+  j.swVal_R = digitalRead(sw_R);  //Define variable that depends on switch position on right joystick
+
+  Serial.print("\n");
+  Serial.print("Left x-value: ");
+  Serial.print(j.xVal_L);
+  Serial.print("\tRight x-value: ");
+  Serial.print(j.xVal_R);
+//  Serial.print("\n");
+//  Serial.print("Left y-value: ");
+//  Serial.print(j.yVal_L);
+//  Serial.print("\tRight y-value: ");
+//  Serial.print(j.yVal_R);
+
+  radio.write(&j, sizeof(j));
+
+  delay(d);
+}
