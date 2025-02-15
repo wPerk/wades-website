@@ -340,19 +340,20 @@ button {
 
 .toggle-btn {
     width: 100%;
-    background-color: #929292;
+    background-color: #cdcdcd;
     color: white;
     padding: 10px;
     font-size: 16px;
     text-align: left;
-    border-color: #929292;
+    border-color: #cdcdcd;
     border: thin;
     border-width: 0;
     cursor: pointer;
 }
 
     .toggle-btn:hover {
-        background-color: #616161;
+        background-color: #bfbfbf;
+        transform: scale(1.02);
     }
 
 #subject-btn {
@@ -387,19 +388,19 @@ button {
 
 #collapse-all-btn {
     width: 50%;
-    background-color: #929292;
+    background-color: #cdcdcd;
     color: white;
     padding: 10px;
     font-size: 16px;
     text-align: left;
-    border-color: #929292;
+    border-color: #cdcdcd;
     border: thin;
     border-width: 0;
     cursor: pointer;
 }
 
     #collapse-all-btn:hover {
-        background-color: #616161;
+        background-color: #bfbfbf;
     }
 
 .collapsible-content {
