@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wade's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <i class="fas fa-home home-button" onclick="goHome()"></i>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav class="navbar">
+    <ul>
+        <li><a href="resume.html" id="#">Resume</a></li>
+        <li><a href="projects.html" id="#">Projects</a></li>
+        <li><a href="contact.html" id="#">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <input type="checkbox" id="menu-toggle-checkbox">
+        <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="experience.html">Experience</a>
+                <ul class="sub-list">
+                    <li><a href="#">Engineering</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience10.html">Salas O'Brien</a></li>
+                            <li><a href="experience9.html">MVG</a></li>
+                            <li><a href="experience8.html">Newcomb & Boyd</a></li>
+                            <li><a href="experience2.html">ZDI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Retail</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience7.html">Best Buy (GA)</a></li>
+                            <li><a href="experience5.html">Best Buy (AZ)</a></li>
+                            <li><a href="experience4.html">Best Buy (OK)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Restaurant</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience6.html">KFH</a></li>
+                            <li><a href="experience3.html">Red Lobster (IL)</a></li>
+                            <li><a href="experience1.html">Red Lobster (OK)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="education.html">Education</a>
+                <ul class="sub-list">
+                </ul>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul class="sub-list">
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+    <main class="main-content">
+        <div>
+            <h2 style="margin-left: 20px;">Microwave Vision Group</h2>
+        </div>
+        <div class="content-container">
+            <div class="left-column">
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\MVG_Logo1A.png" alt="" style="margin-left:20px;width:100%;height:160px;" onload="logImageSize(this)"><br>
+                <img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\MVG_Logo2.jpg" alt="" style="margin-left:20px;margin-bottom:60px;width:100%;height:auto;" onload="logImageSize(this)">
+            </div>
+            <div class="right-column">
+                <details style="margin-left: 20px;">
+                    <summary>My Roles</summary>
+                    <p style="margin-left: 40px;">RF Technician Intern</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>My Responsibilities</summary>
+                    <p style="margin-left: 40px;"></p>
+                    <p style="margin-left: 40px;">Tested radio frequency detection devices</p>
+                    <p style="margin-left: 40px;">Performed measurements and plotted data from antenna</p>
+                    <p style="margin-left: 40px;">Soldered and helped with repairs on equipment</p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>Dates Employed</summary>
+                    <p style="margin-left: 40px;">Microwave Vision Group, Marietta GA <span style="float: right; margin-right: 20px;">Oct 2023 - Dec 2023</span></p>
+                </details>
+                <details style="margin-left: 20px;">
+                    <summary>About Microwave Vision Group</summary>
+                    <p style="margin-left: 40px;">
+                        MVG, at the forefront of antenna measurements, is in stride with next-gen wireless developments. As a result, we're on a continuous hunt for
+                        expertise in engineering, project management, and other technical domains. Excited about the future of connectivity and technology? Eager to
+                        join an industry vanguard?
+                    </p>
+                </details>
+                <p style="text-align: center; margin-top: 10px; margin-bottom: 10px;"> ___________________________________________________________________ </p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Address Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Location: 450 Franklin Gateway SE Suite 100, Marietta, GA 30067</p>
+                <p style="margin-left: 20px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Website Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Website: <a href="https://www.mvg-world.com/en">www.mvg-world.com</a></p>
+                <p style="margin-left: 20px; margin-bottom: 72px;"><img src="C:\Users\Wade\Documents\04_CODING\Project_02 - My Third Website\Website - GitHub Version\Files\Google Phone Icon.png" alt="" style="width:20px; height:20px;">&nbsp; Phone: (678) 797-9172</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My First Website</p>                                                                 <!-- Displays copyright information -->
+    </footer>
+    <script src="script.js"></script>                                                                    <!-- Links the JavaScript file for interactivity -->
+</body>
+</html>
