@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,86 +13,58 @@
         <h1>Welcome to My Website</h1>
     </header>
     <nav class="navbar">
-        <ul>
-            <li><a href="#" id="#">Page 1</a></li>
-            <li><a href="#" id="#">Page 2</a></li>
-            <li><a href="#" id="#">Page 3</a></li>
+    <ul>
+        <li><a href="resume.html" id="#">Resume</a></li>
+        <li><a href="projects.html" id="#">Projects</a></li>
+        <li><a href="contact.html" id="#">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <input type="checkbox" id="menu-toggle-checkbox">
+        <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="experience.html">Experience</a>
+                <ul class="sub-list">
+                    <li><a href="#">Engineering</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience10.html">Salas O'Brien</a></li>
+                            <li><a href="experience9.html">MVG</a></li>
+                            <li><a href="experience8.html">Newcomb & Boyd</a></li>
+                            <li><a href="experience2.html">ZDI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Retail</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience7.html">Best Buy (GA)</a></li>
+                            <li><a href="experience5.html">Best Buy (AZ)</a></li>
+                            <li><a href="experience4.html">Best Buy (OK)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Restaurant</a>
+                        <ul class="sub-sub-list">
+                            <li><a href="experience6.html">KFH</a></li>
+                            <li><a href="experience3.html">Red Lobster (IL)</a></li>
+                            <li><a href="experience1.html">Red Lobster (OK)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="education.html">Education</a>
+                <ul class="sub-list">
+                </ul>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul class="sub-list">
+                </ul>
+            </li>
         </ul>
-        <div class="menu-toggle">
-            <input type="checkbox" id="menu-toggle-checkbox">
-            <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
-            <ul class="menu">
-                <li>
-                    <a href="home.html">Home/Introduction</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="about-me.html">About Me</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="education.html">Education</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Experience</a>
-                    <ul class="sub-list">
-                        <li><a href="experience1.html">Experience 1</a></li>
-                        <li><a href="experience2.html">Experience 2</a></li>
-                        <li><a href="experience3.html">Experience 3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="skills.html">Skills</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                        <li><a href="#">Sub Item 3</a></li>
-                        <li><a href="#">Sub Item 4</a></li>
-                        <li><a href="#">Sub Item 5</a></li>
-                        <li><a href="#">Sub Item 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="honors-and-awards.html">Honors and Awards</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="activities-and-interests.html">Activities and Interests</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="resume.html">Resume/CV</a>
-                    <ul class="sub-list">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
+</nav>
     <div class="progress-container">
         <div class="progress-bar" id="myProgressBar"></div>
     </div>
@@ -108,13 +80,14 @@
             <div class="right-column">
                 <details style="margin-left: 20px;">
                     <summary>My Roles</summary>
-                    <p style="margin-left: 40px;">Host, busser, and all kitchen positions</p>
+                    <p style="margin-left: 40px;">All Kitchen Positions</p>
                 </details>
                 <details style="margin-left: 20px;">
                     <summary>My Responsibilities</summary>
-                    <p style="margin-left: 40px;">Worked in a fast-paced kitchen environment, preparing and cooking various dishes according to recipes and customer preferences.</p>
-                    <p style="margin-left: 40px;">Operated kitchen equipment and maintained cleanliness and hygiene standards to ensure food safety.</p>
-                    <p style="margin-left: 40px;">Coordinated with kitchen staff to ensure timely and accurate meal preparation, contributing to a positive dining experience for guests.</p>
+                    <p style="margin-left: 40px;">Worked fry cook, assembler, dishwasher, sauté, baker, food prep, and broiler</p>
+                    <p style="margin-left: 40px;">Maintained a clean, organized, and fully stocked station</p>
+                    <p style="margin-left: 40px;">Worked seamlessly with coworkers to get dishes out cooked and plated to perfection</p>
+                    <p style="margin-left: 40px;">Made use of downtime by making sure others were caught up</p>
                 </details>
                 <details style="margin-left: 20px;">
                     <summary>Dates Employed</summary>
@@ -142,6 +115,5 @@
         <p>&copy; 2024 My First Website</p>                                                                 <!-- Displays copyright information -->
     </footer>
     <script src="script.js"></script>                                                                    <!-- Links the JavaScript file for interactivity -->
-    <div id="collapse-all-btn"></div>   <!--This line of code is here because for some reason, the progress bar has stopped working unless id="collapse-all-btn" shows up somewhere in the code-->
 </body>
 </html>
