@@ -1,4 +1,4 @@
-﻿/*Notes:*/
+/*Notes:*/
 /*I could probably update the class .home-button to an id #homeButton instead since it's the only one */
 
 /*This resets any extra margin/padding that might be affecting the layout.*/
@@ -136,6 +136,23 @@ nav {
     display: block; /*Show sub-list when parent li is hovered */
 }
 
+.sub-sub-list {
+    position: absolute; /*Set position to absolute for sub-list */
+    top: 0;
+    right: 100%; /*Position sub-list to the right of parent */
+    width: 100%; /*Set width for sub-list */
+    background-color: #f9f9f9; /*Set background color for sub-list */
+    border: 1px solid #ccc; /*Add border for the sub-list */
+    padding: 0; /*Remove padding for the sub-list */
+    list-style-type: none; /*Remove default list style */
+    z-index: 10; /*Set z-index for stacking order */
+    display: none; /*Initially hide the sub-list */
+}
+
+.sub-list li:hover .sub-sub-list {
+    display: block; /*Show sub-list when parent li is hovered */
+}
+
 .menu li {
     padding: 10px; /*Add padding for menu items */
     position: relative;
@@ -240,10 +257,80 @@ button {
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
 }
 
+.narrow-left-column {
+    width: auto; /*Set width for left column in two-column layout */
+    padding: 20px;
+    box-sizing: border-box; /*Include padding and border in the box's total width and height */
+}
+
+.wide-right-column {
+    width: 80%; /*Set width for right column in two-column layout */
+    padding: 20px;
+    box-sizing: border-box; /*Include padding and border in the box's total width and height */
+}
+
 .personal-layout {
     overflow: hidden;
     width: 100%;
     background: #dbdbdb;
+}
+
+.experience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 110px;
+    background-color: #cdcdcd;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+    .experience-item:hover {
+        background-color: #bfbfbf;
+        transform: scale(1.02);
+    }
+
+    .experience-item img {
+        width: 128px;
+        height: 90px;
+        object-fit: contain;
+        margin-left: 10px;
+    }
+
+.experience-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    position: center;
+}
+
+.position-title {
+    font-size: 14px;
+    margin: 0;
+    position: center;
+}
+
+.employment-dates {
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 .collapsible {
@@ -380,7 +467,7 @@ button {
 /*Styles form Home Button*/
 .home-button {
     font-size: 30px;
-    color: #4CAF50;
+    color: #4caf50;
     cursor: pointer;
     position: absolute;
     top: 20px;
