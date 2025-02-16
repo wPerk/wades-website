@@ -244,39 +244,42 @@ button {
 .content-container {
     display: flex; /* Use Flexbox for layout */
     flex: 1;
+    height: auto;
     background-color: rgba(200, 200, 0, 0.1);
 }
 
 .divider {
   height: 1px;
   background-color: black; /* Thin black line */
-  margin: 10px 0; /* Add space above and below */
+  margin: 10px 10px; /* Add space above and below */
 }
 
 .left-column {
     width: 50%; /*Set width for left column in two-column layout */
-    padding: 20px;
-    box-sizing: content-box; /*Include padding and border in the box's total width and height */
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box; /*Include padding and border in the box's total width and height */
 }
 
 .right-column {
     width: 50%; /*Set width for right column in two-column layout */
-    padding: 20px;
+    height: auto;
+    padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
 }
 
 .narrow-left-column {
     width: 20%; /*Set width for left column in two-column layout */
-    max-height: 350px;
-    padding: 20px;
-    box-sizing: content-box; /*Include padding and border in the box's total width and height */
+    max-height: auto;
+    padding: 10px;
+    box-sizing: border-box; /*Include padding and border in the box's total width and height */
     background-color: rgba(0, 255, 0, 0.1);
 }
 
 .wide-right-column {
     width: 80%; /*Set width for right column in two-column layout */
-    max-height: 350px;
-    padding: 20px;
+    height: auto;
+    padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
     background-color: rgba(255, 0, 0, 0.1); /* Light red for visibility */
 }
