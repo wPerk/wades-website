@@ -247,6 +247,12 @@ button {
     background-color: rgba(200, 200, 0, 0.1);
 }
 
+.divider {
+  height: 1px;
+  background-color: black; /* Thin black line */
+  margin: 10px 0; /* Add space above and below */
+}
+
 .left-column {
     width: 50%; /*Set width for left column in two-column layout */
     padding: 20px;
@@ -261,6 +267,7 @@ button {
 
 .narrow-left-column {
     width: 20%; /*Set width for left column in two-column layout */
+    max-height: 350px;
     padding: 20px;
     box-sizing: content-box; /*Include padding and border in the box's total width and height */
     background-color: rgba(0, 255, 0, 0.1);
