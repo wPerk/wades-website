@@ -407,6 +407,20 @@ button {
     display: none;
 }
 
+.project-description {
+    display: flex;
+    align-items: baseline;
+    margin-left: 20px;
+}
+.left-of-colon {
+    min-width: 10px; /* Adjust as needed */
+    text-align: left;
+}
+.after-colon {
+    flex: 1;
+    padding-left: 10px;
+}
+
 .education-item {
     margin-bottom: 76px; /*Add margin at the bottom of each education item */
 }
