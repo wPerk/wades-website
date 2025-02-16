@@ -231,6 +231,7 @@ button {
 .main-content {
     display: flex; /*Use Flexbox for layout */
     flex-direction: column;
+    background-color: rgba(200, 0, 200, 0.1);
 }
 
     .main-content h2 {
@@ -243,6 +244,7 @@ button {
 .content-container {
     display: flex; /* Use Flexbox for layout */
     flex: 1;
+    background-color: rgba(200, 200, 0, 0.1);
 }
 
 .left-column {
@@ -261,6 +263,7 @@ button {
     width: 20%; /*Set width for left column in two-column layout */
     padding: 20px;
     box-sizing: content-box; /*Include padding and border in the box's total width and height */
+    background-color: rgba(0, 255, 0, 0.1);
 }
 
 .wide-right-column {
@@ -268,12 +271,14 @@ button {
     max-height: 350px;
     padding: 20px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
+    background-color: rgba(255, 0, 0, 0.1); /* Light red for visibility */
 }
 
 .personal-layout {
     overflow: hidden;
     width: 100%;
-    background: #dbdbdb;
+    /*background: #dbdbdb;*/
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 .experience-container {
