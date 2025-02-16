@@ -248,7 +248,7 @@ button {
 .left-column {
     width: 50%; /*Set width for left column in two-column layout */
     padding: 20px;
-    box-sizing: border-box; /*Include padding and border in the box's total width and height */
+    box-sizing: content-box; /*Include padding and border in the box's total width and height */
 }
 
 .right-column {
@@ -258,13 +258,14 @@ button {
 }
 
 .narrow-left-column {
-    width: auto; /*Set width for left column in two-column layout */
+    width: 20%; /*Set width for left column in two-column layout */
     padding: 20px;
-    box-sizing: border-box; /*Include padding and border in the box's total width and height */
+    box-sizing: content-box; /*Include padding and border in the box's total width and height */
 }
 
 .wide-right-column {
     width: 80%; /*Set width for right column in two-column layout */
+    max-height: 350px;
     padding: 20px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
 }
