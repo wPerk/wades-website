@@ -242,9 +242,9 @@ button {
     }
 
 .content-container {
-    display: flex; /* Use Flexbox for layout */
-    flex: 1;
-    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: rgba(200, 200, 0, 0.1);
 }
 
@@ -269,24 +269,22 @@ button {
 }
 
 .narrow-left-column {
-    width: 20%; /*Set width for left column in two-column layout */
-    max-height: auto;
+    flex: 0 0 auto;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
     background-color: rgba(0, 255, 0, 0.1);
 }
 
 .wide-right-column {
-    width: 80%; /*Set width for right column in two-column layout */
-    height: auto;
+    flex: 1 1 auto;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
     background-color: rgba(255, 0, 0, 0.1); /* Light red for visibility */
 }
 
 .personal-layout {
-    overflow: hidden;
-    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
     /*background: #dbdbdb;*/
     background-color: rgba(0, 0, 255, 0.1);
 }
