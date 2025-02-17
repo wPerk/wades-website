@@ -252,8 +252,9 @@ button {
 }
 
 .divider {
-    width: 90%;
+    width: 80%;
     height: 1px;
+    margin: 0 auto;
     background-color: black; /* Thin black line */
     margin: 10px 10px; /* Add space above and below */
 }
