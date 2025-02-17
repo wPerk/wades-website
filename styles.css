@@ -283,7 +283,7 @@ button {
 
 .wide-right-column {
     min-height: 300px;
-    flex: 0 0 70%;
+    flex: 0 0 80%;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
     /* background-color: rgba(255, 0, 0, 0.1); */ /* Light red for visibility */
