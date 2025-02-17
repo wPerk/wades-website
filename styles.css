@@ -231,7 +231,7 @@ button {
 .main-content {
     display: flex; /*Use Flexbox for layout */
     flex-direction: column;
-    background-color: rgba(200, 0, 200, 0.1);
+    /* background-color: rgba(200, 0, 200, 0.1); */
 }
 
     .main-content h2 {
@@ -248,7 +248,7 @@ button {
     align-items: stretch;
     flex-wrap: nowrap;
     width: 100%;
-    background-color: rgba(200, 200, 0, 0.1);
+    /* background-color: rgba(200, 200, 0, 0.1); */
 }
 
 .divider {
@@ -276,7 +276,7 @@ button {
     flex: 0 0 20%;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
-    background-color: rgba(0, 255, 0, 0.1);
+    /* background-color: rgba(0, 255, 0, 0.1); */
 }
 
 .wide-right-column {
@@ -284,7 +284,7 @@ button {
     flex: 0 0 70%;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
-    background-color: rgba(255, 0, 0, 0.1); /* Light red for visibility */
+    /* background-color: rgba(255, 0, 0, 0.1); */ /* Light red for visibility */
 }
 
 .personal-layout {
@@ -293,7 +293,7 @@ button {
     box-sizing: border-box;
     /*background: #dbdbdb;*/
     clear: both;
-    background-color: rgba(0, 0, 255, 0.1);
+    /* background-color: rgba(0, 0, 255, 0.1); */
 }
 
 .experience-container {
