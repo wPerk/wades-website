@@ -231,7 +231,7 @@ button {
 .main-content {
     display: flex; /*Use Flexbox for layout */
     flex-direction: column;
-    /* background-color: rgba(200, 0, 200, 0.1); */
+    background-color: rgba(200, 0, 200, 0.1);           /*purple*/
 }
 
     .main-content h2 {
@@ -248,13 +248,13 @@ button {
     align-items: stretch;
     flex-wrap: nowrap;
     width: 100%;
-    /* background-color: rgba(200, 200, 0, 0.1); */
+    background-color: rgba(200, 200, 0, 0.1);           /*yellow*/
 }
 
 .divider {
     width: 80%;
     height: 1px;
-    margin: 0 auto;
+    
     background-color: black; /* Thin black line */
     margin: 10px 10px; /* Add space above and below */
 }
@@ -264,6 +264,7 @@ button {
     height: auto;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
+    background-color: rgba(255, 165, 0, 0.1);       /*orange*/
 }
 
 .right-column {
@@ -271,6 +272,7 @@ button {
     height: auto;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
+    background-color: rgba(255, 0, 255, 0.1);      /*magenta*/
 }
 
 .narrow-left-column {
@@ -278,7 +280,7 @@ button {
     flex: 0 0 20%;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
-    /* background-color: rgba(0, 255, 0, 0.1); */
+    background-color: rgba(0, 255, 0, 0.1);        /*green*/
 }
 
 .wide-right-column {
@@ -286,7 +288,7 @@ button {
     flex: 0 0 80%;
     padding: 10px;
     box-sizing: border-box; /*Include padding and border in the box's total width and height */
-    /* background-color: rgba(255, 0, 0, 0.1); */ /* Light red for visibility */
+    background-color: rgba(255, 0, 0, 0.1);        /* Light red for visibility */
 }
 
 .personal-layout {
@@ -295,7 +297,7 @@ button {
     box-sizing: border-box;
     /*background: #dbdbdb;*/
     clear: both;
-    /* background-color: rgba(0, 0, 255, 0.1); */
+    background-color: rgba(0, 0, 255, 0.1);        /*blue*/
 }
 
 .experience-container {
