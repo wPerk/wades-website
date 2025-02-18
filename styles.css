@@ -254,7 +254,7 @@ button {
 .divider {
     width: 80%;
     height: 1px;
-    
+    align-items: center;
     background-color: black; /* Thin black line */
     margin: 10px 10px; /* Add space above and below */
 }
