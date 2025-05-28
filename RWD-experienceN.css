@@ -1,0 +1,164 @@
+@media (max-width: 690px) {
+    .exp-item-RWD {
+        padding: 0.3125rem;
+        min-height: 14.1875rem;
+
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+    }
+
+    .left-column {
+        width: 100%;                                             /* Set width for left column in two-column layout */
+        height: auto;
+        padding: 0.625rem;
+        box-sizing: border-box;                                 /* Include padding and border in the box's total width and height */
+
+        display: flex;
+        flex-direction: column;
+    }
+    .right-column {
+        display: none;
+
+        visibility: hidden;
+    }
+
+    .ghost-col {
+        width: 100%;                                             /* Set width for left column in two-column layout */
+        height: auto;
+        margin: 0;
+        padding: 0.3125rem;
+        box-sizing: border-box;                                 /* Include padding and border in the box's total width and height */
+
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+    }
+    
+    .row-1 {
+        display: flex;
+        flex-direction: column;                                            /* Row -> Column */
+        padding: 0.3125rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    .image-block-A {
+        display: none;
+
+        visibility: hidden;
+    }
+        .image-block-A img1 {
+            display: none;
+
+            visibility: hidden;
+        }
+        .image-block-A img2 {
+            display: none;
+
+            visibility: hidden;
+        }
+
+    .ghost-image {
+        margin-top: 1.25rem;
+        margin-right: 0;
+        margin-bottom: 0.3125rem;
+        margin-left: 0.625rem;
+        min-width: 20.3125rem;
+        max-width: 45.375rem;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        
+        visibility: visible;
+    }
+        .ghost-image img1 {
+            min-width: 19.6875rem;
+            max-width: 45.3125rem;                                          /* Set width of the image */
+            height: auto;                                          /* Set height of the image */
+            /*display: block;*/                                             /* Ensures the image behaves as a block element */
+            margin: 0.0625rem;                                          /* Remove any auto margins */
+        
+            visibility: visible;
+        }
+        .ghost-image img2 {
+            min-width: 19.6875rem;
+            max-width: 45.3125rem;                                          /* Set width of the image */
+            height: auto;                                         /* Set height of the image */
+            /*display: block;*/                                             /* Ensures the image behaves as a block element */
+            margin: 0.0625rem;                                          /* Remove any auto margins */
+
+            visibility: visible;
+        }
+}
+
+@media (max-width: 1470px) {
+    .exp-item-RWD {
+        padding: 0.3125rem;
+        min-height: 14.1875rem;
+
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+    }
+
+    .image-block-A {
+        display: none;
+
+        visibility: hidden;
+    }
+        .image-block-A img1 {
+            display: none;
+
+            visibility: hidden;
+        }
+        .image-block-A img2 {
+            display: none;
+
+            visibility: hidden;
+        }
+
+    .ghost-image {
+        margin-top: 1.25rem;
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+        margin-left: 0.625rem;
+        min-width: 20.3125rem;
+        max-width: 45.375rem;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        visibility: visible;
+    }
+        .ghost-image img1 {
+            min-width: 19.6875rem;
+            max-width: 45.3125rem;                                          /* Set width of the image */
+            height: auto;                                          /* Set height of the image */
+            /*display: block;*/                                             /* Ensures the image behaves as a block element */
+            margin: 0.0625rem;                                          /* Remove any auto margins */
+
+            visibility: visible;
+        }
+        .ghost-image img2 {
+            min-width: 19.6875rem;
+            max-width: 45.3125rem;                                          /* Set width of the image */
+            height: auto;                                         /* Set height of the image */
+            /*display: block;*/                                             /* Ensures the image behaves as a block element */
+            margin: 0.0625rem;                                          /* Remove any auto margins */
+
+            visibility: visible;
+        }
+
+    /* === Breaks/Spacers === */
+    .break {
+        display: none;
+    
+        visibility: hidden;
+    }
+}
