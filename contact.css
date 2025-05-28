@@ -1,0 +1,124 @@
+.contact-content {
+    margin: 0.3125rem;
+    max-width: 100%;                                        /* Ensures container doesn't exceed parent width */
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: start;
+    gap: 0.5ch;                                             /* Roughly the width of one character */
+}
+
+.contact-info {
+    margin: 0.3125rem;
+    padding-top: 0;
+    padding-right: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0;
+    max-width: 100%;                                        /* Ensures container doesn't exceed parent width */
+
+    text-align: left;
+    word-wrap: break-word;                                    /* Legacy property for breaking words */
+    overflow-wrap: break-word;                                /* Standard, preferred way to break long words */
+    word-break: break-word;                                   /* Fallback for extra stubborn long strings */
+    white-space: normal;                                      /* Ensures text wraps onto multiple lines */
+}
+
+.contact-heading {
+    margin-top: 0.3125rem;
+    margin-right: 0;
+    margin-bottom: 0.3125rem;
+    margin-left: 0.625rem;
+    padding: 0.3125rem;
+    max-width: 100%;                                        /* Ensures container doesn't exceed parent width */
+
+    text-align: left;
+    word-wrap: break-word;                                  /* Legacy property for breaking words */
+    overflow-wrap: break-word;                              /* Standard, preferred way to break long words */
+    word-break: break-word;                                 /* Fallback for extra stubborn long strings */
+    white-space: normal;                                    /* Ensures text wraps onto multiple lines */
+    list-style-type: none;
+}
+
+.contact-item {
+    margin-left: 3.125rem;
+    padding: 0.3125rem;
+    max-width: 100%;                                        /* Ensures container doesn't exceed parent width */
+
+    align-items: center;
+
+    word-wrap: break-word;                                  /* Legacy property for breaking words */
+    overflow-wrap: break-word;                              /* Standard, preferred way to break long words */
+    word-break: break-word;                                 /* Fallback for extra stubborn long strings */
+    white-space: normal;                                    /* Ensures text wraps onto multiple lines */
+}
+
+.spacer-01 {
+    width: 100%;
+    height: 0.3125rem;                                      /* 5px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-02 {
+    width: 100%;
+    height: 0.625rem;                                       /* 10px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-03 {
+    width: 100%;
+    height: 0.9375rem;                                      /* 15px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-04 {
+    width: 100%;
+    height: 1.25rem;                                        /* 20px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-05 {
+    width: 100%;
+    height: 1.875rem;                                       /* 30px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-06 {
+    width: 100%;
+    height: 2.5rem;                                         /* 40px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.spacer-07 {
+    width: 100%;
+    height: 3.125rem;                                        /* 50px */
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
