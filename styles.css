@@ -1,0 +1,307 @@
+*, *::before, *::after {
+
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;                                              /* Removes default padding around the page */
+    padding: 0;                                             /* Removes default padding around the page */
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: Verdana, sans-serif;                       /* Sets a clean, sans-serif font for */
+    color: #333;                                            /* Sets a dark gray text color for readability */
+    
+    background-color: #dbdbdb;                              /* Sets a light gray background */
+}
+
+h1 {
+
+}
+
+h2 {
+    margin-left: 1.25rem;
+}
+
+h3 {
+    margin: 0.3125rem 1.25rem 0.3125rem 0.3125rem;
+    padding: 0.0625rem;
+}
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0.0625rem 0;
+    width: 100%;                                            /* Ensures that the main class fills the whole screen */
+}
+.page-title {
+    margin: 0.3125rem;
+    padding-left: 0.9375rem;
+
+    flex: 1 1 auto;
+
+    font-size: 1.8rem;
+}
+
+header {
+    z-index: 10;
+
+    padding: 1.875rem 1.25rem;                              /* Adds spacing inside the header */
+    width: 100%;
+
+    font-size: 1.5rem;                                      /* Increases font size for better visibility */
+    text-align: center;                                     /* Centers the header content */
+    color: white;                                           /* Makes the text color white for contrast */
+
+    background-color: #444;                                 /* Sets a gray background for the header */
+}
+
+.home-button {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 10;
+
+    font-size: 1.875rem;
+    color: #4caf50;
+
+    cursor: pointer;
+}
+    .home-button:hover {
+    
+        color: #45a049;                                     /* Change color on hover */
+    }
+    .home-button i {
+    
+        font-size: 1.25rem;
+    }
+
+
+footer {
+    position: relative;                                     /* Place the footer in its position relative to its "normal flow" position */
+
+    margin-top: 0;                                          /* Adds space above the footer */
+    padding: 0.3125rem;                                     /* Adds vertical padding inside the footer */
+    width: 100%;
+    height: auto;
+
+    text-align: center;                                     /* Centers the text in the footer */
+    
+    color: white;                                           /* Makes the footer text white */
+
+    background-color: #444;                                 /* Sets a dark background color for the footer */
+}
+
+/* === Navigation Menu === */
+nav {
+    z-index: 1000;
+
+    padding: 0.625rem;                                      /* Add padding to navigation */
+
+    background-color: #444;                                 /* Set background color for navigation */
+}
+    nav ul {
+        display: flex;                                      /* Use flexbox for the navbar */
+        justify-content: space-between;                     /* Align items to the sides */
+
+        margin: 0;                                          /* Remove default margin */
+        padding: 0;                                         /* Remove default padding */
+
+        list-style-type: none;                              /* Remove default list style for navigation ul */
+    }
+        nav ul li {
+            flex-grow: 1;                                   /* Equal spacing for all items */
+            
+            padding: 0.3125rem 0.625rem;                    /* Add padding around each navigation item */
+            border-right: 0.0625rem solid #999;             /* Add vertical line between items */
+        }
+            nav ul li:last-child {
+                border-right: none;                         /* Remove border for last item */
+            }
+            nav ul li a {
+                color: white;                               /* Set text color for navigation links */
+                text-decoration: none;                      /* Remove underline from navigation links */
+            }
+            nav ul li:hover {
+                background-color: #555;                     /* Change background on hover */
+            }
+
+.navbar {
+    position: sticky;                                       /* Make navbar sticky */
+    top: 0;                                                 /* Stick it to the top of the viewport */
+    z-index: 1000;
+
+    display: flex;                                          /* Use flexbox for layout */
+    justify-content: space-between;                         /* Align items to the sides */
+    align-items: center;                                    /* Align items vertically */    
+
+    padding: 0.625rem 1.25rem;                              /* Add padding to navbar */
+    width: 100%;
+
+    color: #fff;                                            /* Set text color for navbar */
+
+    background-color: #222;                                 /* Set background color for navbar */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);            /* Optional: Add shadow for the menu */
+}
+
+.progress-container {
+    position: sticky;                                       /* Make progress container sticky */
+    top: 3.125rem;                                          /* Stick it to the top of the viewport */
+    z-index: 999;
+
+    width: 100%;                                            /* Set width for progress container */
+
+    background-color: #f1f1f1;                              /* Set background color for progress container to white */
+}
+
+.progress-bar {
+    top: 3.125rem;                                          /* Stick it to the top of the viewport */
+    z-index: 999;
+
+    width: 0;                                               /* Initial width for progress bar */
+    height: 0.3125rem;                                      /* Set height for progress bar */
+    margin-top: 0;                                          /* Remove top margin for progress bar */
+
+    background-color: #4caf50;                              /* Set background color for progress bar to green */
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0.4688rem;
+    right: 0.875rem;
+    z-index: 10;
+
+    font-size: 1.5rem;                                      /*Set font size for menu icon */
+
+    cursor: pointer;                                        /*Set cursor to pointer for interaction */
+}
+    .menu-icon:hover {
+        background-color: #555;                             /*Change background on hover */
+    }
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.625rem;
+
+    color: white;
+
+    background-color: #222;
+}
+
+.dropdown {                                                 /* .dropdown = .menu from My First Website */
+    position: absolute;                                     /* Position menu absolute */
+    top: 3.4375rem;                                         /* Align menu from top */
+    right: 0;                                               /* Align menu from right */
+    z-index: 10;                                            /* Set z-index for stacking order */
+
+    display: none;                                          /* Initially hide the menu */
+    flex-direction: column;                                 /* Align items in a column */
+    align-items: stretch;                                   /* Stretch items vertically */
+
+    padding: 0;                                             /* Add padding for menu items */
+    width: 25%;                                             /* Set width for the menu */
+    height: auto;                                           /* Set height to auto */
+    list-style-type: none;                                  /* Remove default list style for menu */
+    border: 0.0625rem solid #ccc;                           /* Add border for the sub-list */
+
+    background-color: #f9f9f9;                              /* Set background color for menu */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);            /* Optional: Add shadow for the menu */
+}
+@media (max-width: 600px) {
+    .dropdown {
+        right: 0;
+        left: 0;
+    
+        width: 100vw;
+    }
+}
+    .dropdown li {
+        position: relative;
+    
+        padding: 0.625rem;                                  /* Add padding for menu items */
+        border-right: 0.0625rem solid #ccc;                 /* Add border between items */
+        border-bottom: 0.0625rem solid #ccc;                /* Add border between items */
+
+        text-align: left;                                   /* Align text to left */
+    }
+    .dropdown li:last-child {
+        border-right: 0.0625rem solid #ccc;                 /* Remove right border for the last item */
+    }
+        .dropdown a {
+            padding: 0.625rem;                              /* Add padding for better clickability */
+            width: 100%;                                    /* Set full width for clickable area */
+        
+            color: black;                                   /* Set text color for menu links */
+            text-decoration: none;                          /* Remove underline from menu links */
+        
+            display: block;                                 /* Make it block to take full width */
+        }
+
+.main-content {
+    display: flex;                                          /* Allows a flexible box to fill the parent container's alotted space */
+    flex-direction: column;                                 /* Box is designated to fill or flex vertically */
+    flex: 1;                                                /* Grows to fill the vertical space left */
+
+    padding: 0.625rem;
+    width: 100%;
+    min-height: 100vh;                                       /* Ensures that the main class fills the whole screen */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        width: 100%;
+        min-height: 100vh;                                   /* Make the container fill the viewport height */
+    
+        align-items: flex-start;
+    }
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.row {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;                                    /* optional: for vertical centering */
+}
+
+.label {
+    padding: 0.3125rem;
+}
+
+.dimensions {
+    padding: 0.3125rem;
+}
+
+#size-display-content {
+    font-weight: bold;
+    color: blue;
+}
