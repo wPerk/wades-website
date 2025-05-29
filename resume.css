@@ -1,0 +1,17 @@
+.resume-content {
+    /* Box Model */
+    margin-left: 0.3125rem;
+    padding: 0.3125rem;
+}
+
+.resume-item {
+    /* Box Model */
+    margin-top: 0.3125rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.3125rem;
+    margin-left: 0.625rem;
+    padding: 0.3125rem;
+
+    /* Typography */
+    list-style-type: none;
+}
