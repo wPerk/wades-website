@@ -1,0 +1,38 @@
+//zoomkat LED button toggle test 11-08-2012
+
+//This program is a side project that will be used in Project 1.
+
+int ledPin = 3;
+int button = 2; //button pin, touch to ground as button
+int buttonState = 0;
+bool turbo = true;
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);
+  pinMode(button, INPUT);   //arduino monitor pin state
+  digitalWrite(2, HIGH);    //enable pullups to make pin 2 high
+
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  buttonState = digitalRead(button);
+  Serial.println(buttonState);
+  
+  if (buttonState == LOW)
+  {
+    if(turbo)
+    {
+      digitalWrite(3, HIGH);   // set the LED on
+      turbo = !turbo;
+    }
+    else
+    {
+      digitalWrite(3, LOW);    // set the LED off
+      turbo = !turbo;
+    }
+  }
+  delay(250);  //delay for debounce
+}

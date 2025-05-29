@@ -1,0 +1,32 @@
+
+#####Online HW Chapter 3 Problem 8#####
+#####
+#####Since problems 7, 8, and 9 use the same data, .csv file labeled "Ch3Prob789"
+#####
+
+#Import data from file using location address
+Ch3Prob789<- read.csv(file = 'C:\\Users\\Wade\\Documents\\School\\KSU\\STAT 2332\\Online HW\\Ch 3 Online HW Data\\Ch3Prob789.csv')
+
+#Boxplot code. This will create a popup of the boxplot.
+boxplot(Ch3Prob789$Caffeine_.mg., horizontal = TRUE)
+
+#There is 1 dot on right side of box plot. This represents 1 outlier.
+
+
+
+###ANSWERS###
+#
+#The summary statistics and the box plot suggest the distribution is approximately (symmetric).
+#
+#The distribution is centered around (206) and has (lots of) variability, and (one mild outlier).
+#	...note to self: I'm pretty sure it is an EXTREME outlier because it is shown on the box plot
+#			     as an OPEN circle which means extreme, and CLOSED circle means mild
+
+
+###FEEDBACK###
+#The distribution is not skewed left. A left skewed distribution has a SHORT horizontal
+# line on the RIGHT of the IQR box and a long horizontal line on the left of the IQR box.
+#
+#The box for the IQR has the vertical median line closer Q3 to than Q1.
+#
+#This distribution s horizontal lines appear to be equal in length.

@@ -1,0 +1,24 @@
+//This program works with a voltage divider circuit. The circuit
+//converts a 12V source into 5V which is connected to A0 on the
+//microcontroller. The program converts this input voltage at A0
+//back into the voltage source so that the charge of the 12V LiPo
+//battery can be checked without using a multimeter.
+
+int value = 0;       //Voltage read at A0
+float voltage;       //Voltage left on source
+float R1 = 4700.0;   //Resistor 1 in ohms
+float R2 = 3200.0;   //Resistor 2 in ohms
+
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  value = analogRead(A0);                         //Read voltage from voltage divider circuit at A0
+  voltage = value * (5.0/1024)*((R1 + R2)/(R2));  //Convert voltage at A0 back to voltage from source
+  Serial.print("Voltage = ");
+  Serial.println(voltage);
+  delay(500);
+
+}

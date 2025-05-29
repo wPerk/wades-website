@@ -1,0 +1,30 @@
+/*Center Servo
+ * Copyright (C) 2014 Velleman nv
+ *
+ * This software may be modified and distributed under the terms
+ * of the MIT license.  See the LICENSE file for details.
+ *
+ */
+#include <Servo.h>
+
+Servo myservoA;  // create servo object to control a servo
+Servo myservoB;
+Servo myservoC;
+Servo myservoD;
+
+void setup()
+{
+  myservoA.attach(2);  // attaches the servo on pin 1 to the servo object
+  myservoB.attach(4);
+  myservoC.attach(6);
+  myservoD.attach(10);
+}
+
+void loop() 
+{
+  myservoA.write(90);                   // sets the servo position to 90° (is half of 180°)
+  myservoB.write(90);
+  myservoC.write(90);
+  myservoD.write(90);
+  delay(15);                           // waits for the servo to get there 
+} 

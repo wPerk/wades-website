@@ -1,0 +1,145 @@
+//Description:
+//Counts from 0 to 11 in 11 seconds, skipping number 10.
+
+int Seg1 = 1;
+int Seg2 = 2;
+int Seg4 = 4;
+int Seg5 = 5;
+int Seg6 = 6;
+int Seg9 = 9;
+int Seg10 = 10;
+
+int d = 1000;
+
+void setup() {
+  pinMode(Seg1, OUTPUT);
+  pinMode(Seg2, OUTPUT);
+  pinMode(Seg4, OUTPUT);
+  pinMode(Seg5, OUTPUT);
+  pinMode(Seg6, OUTPUT);
+  pinMode(Seg9, OUTPUT);
+  pinMode(Seg10, OUTPUT);
+}
+
+void loop() {
+ //Zero:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, LOW);
+  digitalWrite(Seg4, HIGH);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+  
+ //One:
+  digitalWrite(Seg1, LOW);
+  digitalWrite(Seg2, LOW);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, LOW);
+  delay(d);
+
+ //Two:
+  digitalWrite(Seg1, LOW);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, HIGH);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, LOW);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Three:
+  digitalWrite(Seg1, LOW);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Four:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, LOW);
+  delay(d);
+
+ //Five:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, LOW);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Six:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, HIGH);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, LOW);
+  digitalWrite(Seg10, LOW);
+  delay(d);
+
+ //Seven:
+  digitalWrite(Seg1, LOW);
+  digitalWrite(Seg2, LOW);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Eight:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, HIGH);
+  digitalWrite(Seg5, HIGH);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Nine:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, HIGH);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, HIGH);
+  delay(d);
+
+ //Ten:
+  //Can't make 10 lol
+  digitalWrite(Seg1, LOW);
+  digitalWrite(Seg2, LOW);
+  digitalWrite(Seg4, LOW);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, LOW);
+  digitalWrite(Seg9, LOW);
+  digitalWrite(Seg10, LOW);
+  delay(d);
+
+ //Eleven:
+  digitalWrite(Seg1, HIGH);
+  digitalWrite(Seg2, LOW);
+  digitalWrite(Seg4, HIGH);
+  digitalWrite(Seg5, LOW);
+  digitalWrite(Seg6, HIGH);
+  digitalWrite(Seg9, HIGH);
+  digitalWrite(Seg10, LOW);
+  delay(d);
+}

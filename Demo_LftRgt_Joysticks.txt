@@ -1,0 +1,43 @@
+//Left Joystick
+const int VRx_L = A1;  //Blue
+const int VRy_L = A0;  //Green
+const int Sw_L = 3;    //Yellow
+
+//Right Joystick
+const int VRx_R = A3;  //Blue
+const int VRy_R = A2;  //Green
+const int Sw_R = 2;    //Yellow
+
+void setup()
+{
+  pinMode(Sw_L, INPUT);       //Initiate switch on left joystick as an input
+  digitalWrite(Sw_L, HIGH);   //Turn on switch on left joystick
+  pinMode(Sw_R, INPUT);       //Initiate switch on right joystick as an input
+  digitalWrite(Sw_R, HIGH);   //Turn on switch on right joystick
+  
+  Serial.begin(9600);         //Initiate serial monitor at 9600 baud
+}
+
+void loop()
+{
+  int xVal_L = analogRead(VRx_L);   //Define new variable that depends on x-axis value from left joystick
+  int yVal_L = analogRead(VRy_L);   //Define new variable that depends on y-axis value from left joystick
+  int xVal_R = analogRead(VRx_R);   //Define new variable that depends on x-axis value from right joystick
+  int yVal_R = analogRead(VRy_R);   //Define new variable that depends on y-axis value from right joystick
+  
+  Serial.print("Left x-value: ");
+  Serial.print(xVal_L);
+  Serial.print("\tRight x-value: ");
+  Serial.print(xVal_R);
+
+  Serial.print("\nLeft y-value: ");
+  Serial.print(yVal_L);
+  Serial.print("\tRight y-value: ");
+  Serial.print(yVal_R);
+
+  Serial.print("\nLeft switch-value: ");
+  Serial.print(digitalRead(Sw_L));
+  Serial.print("\tRight switch-value: ");
+  Serial.print(digitalRead(Sw_R));
+  Serial.print("\n\n");
+}

@@ -1,0 +1,42 @@
+
+#include <IRremote.h>
+
+int RECV_PIN = 11;
+
+IRrecv irrecv(RECV_PIN);
+
+decode_results results;
+
+void setup() {
+  Serial.begin(9600);
+  irrecv.enableIRIn(); // Start the receiver
+}
+
+void loop() {
+  if (irrecv.decode(&results)) {
+    Serial.println(results.value, HEX);                 
+     
+    irrecv.resume(); // Receive the next value
+  }
+}
+
+
+
+
+
+
+//Results:          In Arduino IDE:
+//PWR - 61D648B7 --> 0x61D648B7
+//  1 - 61D6807F --> 0x61D6807F
+//      or A63561FB
+//  2 - 61D640BF --> 0x61D640BF
+//  3 - 61D6C03F --> 0x61D6C03F
+//  4 - 61D620DF --> 0x61D620DF
+//  5 - 61D6A05F --> 0x61D6A05F
+//  6 - 61D6609F --> 0x61D6609F
+//  7 - 61D6E01F --> 0x61D6E01F
+//  8 - 61D610EF --> 0x61D610EF
+//  9 - 61D6906F --> 0x61D6906F
+//  0 - 61D600FF --> 0x61D600FF
+//Basically just need 0x before the hexidecimal info when using it in code for Arduino IDE
+//  **distance between receiver and remote doesn't change hex code received**
