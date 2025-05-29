@@ -1,0 +1,85 @@
+1. Define the Core Purpose (Refined)
+   - Your site is mainly a resume/portfolio, so the goal should be:
+   - Clearly showcasing your skills, experience, and projects.
+   - Being easy to navigate so recruiters/hiring managers can quickly see what you offer.
+   - Looking professional and polished.
+
+2. What Features Should Stay?
+✅ Keep:
+   - Home page (Make sure it gives a strong first impression)
+      + Should I do something else instead with my home page or contact info?
+      + I'm worried I might start getting unwanted calls/text, etc with my contact info.
+   - Experience pages (Consider merging or simplifying)
+      + I want to make the experience page display small clickable items for each job.
+   - Projects page (Needs to be filled out)
+   - Contact page (Make sure it works properly)
+
+🤔 Decide On:
+   - The extra experience.html file: If you’re not using it, maybe remove it for now or replace it with a simpler "Work Experience" section.
+
+❌ Remove or Fix:
+  - Navigation buttons that don’t do anything → Either remove them or make them functional.
+  - Unused sub-items in the dropdown menu → If they aren’t needed, take them out.
+  - Progress bar issue → Fix or remove it if it's not essential.
+  - Gray box behind the footer → Likely a CSS issue; I can help troubleshoot.
+
+3. What Features Should Be Removed?
+   - If a feature doesn’t add value or isn’t finished, remove it for now.
+   - Focus on a solid, polished base version you can show off.
+
+4. Design & Structure
+✅ Navigation:
+   - Keep it simple and functional.
+   - Do you prefer a fixed navbar or one that scrolls away?
+
+🎨 Colors:
+   - Stick with sleek, professional grays and off-white.
+   - Do you want any accent colors (e.g., blue for buttons, highlights)?
+
+🔠 Fonts & Spacing:
+   - If the text is fine, great! Just make sure it’s easy to read and has good spacing.
+
+5. Finalizing
+🔹 Projects Page: Needs content—list projects clearly, even if it's just short descriptions for now.
+🔹 Fix Navigation Issues: Remove/fix unused buttons and dropdowns.
+🔹 Fix the Progress Bar & Gray Box Issue: I can help debug.
+🔹 Ensure Everything Works & Looks Good on Mobile.
+🔹 Get Outside Feedback: More than just "wow, that’s cool"—maybe ask people what they think could be clearer.
+
+
+
+1. HOME
+   - ABOUT ME
+   - SKILLS
+   - HONORS & AWARDS
+   - ACTIVITIES & INTERESTS
+
+2. EXPERIENCE
+   - SALAS OBRIEN (GA)
+   - NEWCOMB & BOYD (GA)
+   - BEST BUY (GA)
+   - BEST BUY (AZ)
+   - KING'S FISH HOUSE (AZ)
+   - BEST BUY (OK)
+   - RED LOBSTER (IL)
+   - ZELLER DIGITAL INNOVATIONS (IL)
+   - RED LOBSTER (OK)
+   - 1st ever job was for Grandpa Dennis (OK):
+      ~ saved up and bought 1st laptop
+
+3. EDUCATION
+   - KSU (GA)
+   - OCCC (OK)
+   - HCC (IL)
+
+4. PROJECTS
+   - NOTEWORTHY PROJECTS:
+     ~ ARDUINO TANK
+   - PROJECTS BY LANGUAGE:
+     ~ 
+
+
+
+
+xRESUME
+
