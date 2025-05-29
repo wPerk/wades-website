@@ -1,0 +1,12 @@
+long randNumber;
+
+void setup() {
+  Serial.begin(9600);
+  randomSeed(analogRead(0));
+}
+
+void loop() {
+  randNumber = random(5);         // numbers to choose from starting with 0
+  Serial.println(randNumber);
+  delay(1000);
+}
